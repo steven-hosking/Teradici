@@ -4,12 +4,12 @@ import requests
 import pprint
 from csv import DictReader
 
-credentials = {"keyId":"5e73a6c3bd6cd2001feaa3a7",
-    "username":"5e73a6c3bd6cd2001feaa3a7",
+credentials = {"keyId":"",
+    "username":"",
     
-"apiKey":"ENTERAPIKEY",
-    "deployment?Id":"ENTERDEPLOYMENTID",
-    "tenantId":"ENTERTENANTID",
+"apiKey":"",
+    "deployment?Id":"",
+    "tenantId":"",
     
 api_url = "https://cam.teradici.com/api/v1"
 
@@ -54,8 +54,5 @@ deployment = response_body.get('data')[0]
 deployment_id = deployment['deploymentId']
 
 pprint.pprint(deployment_id)
-
-
-
 
 }
